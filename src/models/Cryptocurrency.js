@@ -21,6 +21,7 @@ const CryptocurrencySchema = new mongoose.Schema({
   timestamp: {
     type: Date,
     default: Date.now,
+    required: true,
   },
 });
 
