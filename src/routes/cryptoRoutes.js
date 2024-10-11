@@ -19,6 +19,7 @@ router.get('/stats', async (req, res) => {
       price: latestData.price,
       marketCap: latestData.marketCap,
       "24hChange": latestData.change24h,
+      timestamp: latestData.timestamp
     });
   } catch (error) {
     console.error('Error in /stats route:', error);
