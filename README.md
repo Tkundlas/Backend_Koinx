@@ -106,7 +106,7 @@ Backend_Koinx/
 └── README.md        # Project documentation
 \`\`\`
 
-## Contributing
+## Contribution
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
