@@ -95,7 +95,7 @@ Here is a brief overview of the API endpoints:
 
 \`\`\`bash
 Backend_Koinx/
-├── config/          # Configuration files (e.g., db connection)
+├── config/          # Configuration files (e.g., DB connection)
 ├── controllers/     # Logic for handling requests
 ├── models/          # Mongoose schemas and models
 ├── routes/          # API route definitions
