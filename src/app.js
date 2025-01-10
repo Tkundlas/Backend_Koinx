@@ -7,6 +7,11 @@ const startCronJob = require('./jobs/fetchCryptoData');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the Cryptocurrency API!');
+});
+
 // Connect to MongoDB
 connectDB();
 
