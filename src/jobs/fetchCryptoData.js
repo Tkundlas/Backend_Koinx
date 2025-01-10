@@ -18,7 +18,6 @@ const fetchAndSaveCryptoData = async () => {
 };
 
 const startCronJob = () => {
-  // Run every 1 minute
   cron.schedule('0 */2 * * *', fetchAndSaveCryptoData);
   console.log('[Cron Job] Initialized, will run every 1 minute');
 };
