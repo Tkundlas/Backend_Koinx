@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "main": "src/app.js",
     "scripts": {
-        "start": "node src/app.js",
-        "dev": "vercel dev",
-        "build": "vercel build"
+        "start": "node src/app.js"
     },
     "dependencies": {
         "axios": "^0.21.1",
