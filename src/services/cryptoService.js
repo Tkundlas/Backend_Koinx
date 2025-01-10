@@ -1,11 +1,12 @@
 const axios = require('axios');
 const Cryptocurrency = require('../models/Cryptocurrency');
 
-const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3';
+const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,matic-network,ethereum'
 
 const fetchCryptoData = async (coinId) => {
   try {
-    const response = await axios.get(`${COINGECKO_API_URL}/coins/${coinId}`);
+    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`);
+    console.log(`Response for ${coinId}:`, response.data); 
     const { market_data } = response.data;
 
     return {
@@ -19,7 +20,6 @@ const fetchCryptoData = async (coinId) => {
     throw error;
   }
 };
-
 
 const saveCryptoData = async (data) => {
     try {
